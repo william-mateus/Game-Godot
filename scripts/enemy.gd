@@ -4,6 +4,7 @@ const SPEED = 35.0  # ajuste conforme necessário
 
 @onready var texture := $texture as Sprite2D
 @onready var anim := $anim as AnimationPlayer
+@onready var death_sound: AudioStreamPlayer = $death_sound
 
 var direction := -1
 var is_dead := false
@@ -54,6 +55,11 @@ func _physics_process(delta: float) -> void:
 func die() -> void:
 	if is_dead:
 		return
+		
 	is_dead = true
+	death_sound.play()
 	anim.play("hurt")
+	
+	await death_sound.finished
+	
 	queue_free()

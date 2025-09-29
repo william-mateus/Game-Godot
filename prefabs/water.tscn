@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxf2lstcbda76"]
+
+[ext_resource type="Script" uid="uid://dun6hit7fyre6" path="res://scripts/water.gd" id="1_4balm"]
+[ext_resource type="Texture2D" uid="uid://dm5vpkyxpogfh" path="res://Assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="1_ewrtd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4balm"]
+atlas = ExtResource("1_ewrtd")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a74av"]
+atlas = ExtResource("1_ewrtd")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_45g8t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4balm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a74av")
+}],
+"loop": true,
+"name": &"Water",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8xkbt"]
+size = Vector2(16, 22)
+
+[node name="water" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_4balm")
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_45g8t")
+animation = &"Water"
+frame_progress = 0.70562
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_8xkbt")

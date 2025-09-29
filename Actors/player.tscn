@@ -1,9 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://psmwkmwlvbtr"]
+[gd_scene load_steps=17 format=3 uid="uid://psmwkmwlvbtr"]
 
 [ext_resource type="Script" uid="uid://clnavoln5pira" path="res://scripts/player.gd" id="1_y2lmi"]
+[ext_resource type="Texture2D" uid="uid://dk41r7e67ldua" path="res://Assets/Sprite Pack 2/2 - Mr. Mochi/Hurt (32 x 32).png" id="2_l3d2q"]
 [ext_resource type="Texture2D" uid="uid://dhnswrlvrr506" path="res://Assets/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png" id="2_xk7p5"]
 [ext_resource type="Texture2D" uid="uid://ba7xi7hqggubq" path="res://Assets/Sprite Pack 2/2 - Mr. Mochi/Jumping (32 x 32).png" id="3_xmrs8"]
 [ext_resource type="Texture2D" uid="uid://bgh8wp1sh0n4c" path="res://Assets/Sprite Pack 2/2 - Mr. Mochi/Running (32 x 32).png" id="4_l3d2q"]
+[ext_resource type="AudioStream" uid="uid://c0tduadx6vlhk" path="res://Assets/Sounds/jump-02.wav" id="6_4bcxw"]
+[ext_resource type="AudioStream" uid="uid://c2ak1dnpft7fe" path="res://Assets/Sounds/damage.mp3" id="7_1c8hm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y2lmi"]
 size = Vector2(16, 20)
@@ -34,6 +37,14 @@ region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_naeyk"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_l3d2q")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dtykb")
@@ -86,9 +97,8 @@ shape = SubResource("RectangleShape2D_y2lmi")
 position = Vector2(0, -8)
 scale = Vector2(1.3125, 1.28125)
 sprite_frames = SubResource("SpriteFrames_naeyk")
-animation = &"idle"
+animation = &"hurt"
 autoplay = "idle"
-frame_progress = 0.162777
 
 [node name="animator" type="AnimationPlayer" parent="."]
 
@@ -112,5 +122,12 @@ target_position = Vector2(-4, 0)
 collision_mask = 4
 
 [node name="remote" type="RemoteTransform2D" parent="."]
+
+[node name="jump_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_4bcxw")
+volume_db = -20.0
+
+[node name="hurt_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1c8hm")
 
 [connection signal="body_entered" from="hurtBox" to="." method="_on_hurt_box_body_entered"]

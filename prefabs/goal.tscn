@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cco1puccomcqt"]
+
+[ext_resource type="Script" uid="uid://bp8nhlafdjb04" path="res://scripts/goal.gd" id="1_15wru"]
+[ext_resource type="Texture2D" uid="uid://cbpkyocr0fk8x" path="res://Assets/Mini FX, Items & UI/Common Pick-ups/Treasure_Chest (32 x 16).png" id="1_lm043"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15wru"]
+atlas = ExtResource("1_lm043")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnsmo"]
+atlas = ExtResource("1_lm043")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3wvb"]
+atlas = ExtResource("1_lm043")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cnojs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15wru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnsmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3wvb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxbgi"]
+size = Vector2(20, 14)
+
+[node name="goal" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_15wru")
+next_level = "res://levels/world_02.tscn"
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cnojs")
+autoplay = "default"
+frame_progress = 0.31682
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1)
+shape = SubResource("RectangleShape2D_hxbgi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
