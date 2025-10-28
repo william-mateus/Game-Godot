@@ -392,6 +392,7 @@ autoplay = true
 position = Vector2(2020, 200)
 
 [node name="Transition" parent="." instance=ExtResource("2_o0pi2")]
+visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("26_ao123")

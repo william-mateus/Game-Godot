@@ -1,0 +1,128 @@
+[gd_scene load_steps=10 format=3 uid="uid://bri0leid1ws3d"]
+
+[ext_resource type="Texture2D" uid="uid://n21eurvc6qv4" path="res://Assets/Extras/image_Egg.jpg" id="1_ahs4q"]
+[ext_resource type="Texture2D" uid="uid://cews1spmv0jnm" path="res://Assets/Extras/20230622_210759.png" id="2_c2kyq"]
+[ext_resource type="Texture2D" uid="uid://gkw04c75oga8" path="res://Assets/Extras/20230622_210816.png" id="3_msebq"]
+[ext_resource type="Texture2D" uid="uid://ojbx7v42kdh2" path="res://Assets/Extras/trem.png" id="4_7qggf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6e5og"]
+size = Vector2(500, 247)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4h6lb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c2kyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_msebq")
+}],
+"loop": true,
+"name": &"cj",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_fwtm8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-290.83105, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AnimatedSprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4000, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jboii"]
+resource_name = "trem"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-5300, 0), Vector2(5300, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AnimatedSprite2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.12483046, 0.36666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4000, 90), Vector2(4000, -90)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fuvnv"]
+_data = {
+&"RESET": SubResource("Animation_fwtm8"),
+&"trem": SubResource("Animation_jboii")
+}
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(586, 499.5)
+shape = SubResource("RectangleShape2D_6e5og")
+debug_color = Color(0.6213856, 0, 0.11914482, 1)
+
+[node name="TextureRect" type="TextureRect" parent="CollisionShape2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -161.5
+offset_right = 488.0
+offset_bottom = 270.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+size_flags_vertical = 4
+texture = ExtResource("1_ahs4q")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(285.82748, 483.5625)
+scale = Vector2(0.08933707, 0.09828869)
+sprite_frames = SubResource("SpriteFrames_4h6lb")
+animation = &"cj"
+frame_progress = 0.39023045
+offset = Vector2(4000, 0)
+
+[node name="Trem" type="Sprite2D" parent="."]
+position = Vector2(695.9954, 595.53125)
+scale = Vector2(0.14052157, 0.14801523)
+texture = ExtResource("4_7qggf")
+offset = Vector2(-290.83105, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trem"]
+libraries = {
+&"": SubResource("AnimationLibrary_fuvnv")
+}
+autoplay = "trem"

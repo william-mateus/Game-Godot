@@ -36,5 +36,3 @@ func _ready() -> void:
 		0.0,
 		duration
 	)
-func _process(delta: float) -> void:
-	pass

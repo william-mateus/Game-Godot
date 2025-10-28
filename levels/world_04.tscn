@@ -1,33 +1,33 @@
-[gd_scene load_steps=41 format=3 uid="uid://c1jmjv357w1hr"]
+[gd_scene load_steps=41 format=3 uid="uid://1i5vhncp41rk"]
 
-[ext_resource type="Script" uid="uid://dq24lwgxe1np5" path="res://scripts/world_01.gd" id="1_6dwv8"]
-[ext_resource type="Texture2D" uid="uid://ckacmlp0l0403" path="res://Assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_2f64h"]
-[ext_resource type="Texture2D" uid="uid://bnrf6j8d0or65" path="res://Assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="3_qxav0"]
-[ext_resource type="Texture2D" uid="uid://f8absvmqv73r" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="4_2f64h"]
-[ext_resource type="PackedScene" uid="uid://c81cb8fd5ul5l" path="res://prefabs/coin.tscn" id="4_y5ite"]
-[ext_resource type="PackedScene" uid="uid://dook8462432xr" path="res://prefabs/moving_plataform.tscn" id="5_7qssf"]
-[ext_resource type="Texture2D" uid="uid://ogoxjin2dg8n" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="5_qxav0"]
-[ext_resource type="PackedScene" uid="uid://psmwkmwlvbtr" path="res://Actors/player.tscn" id="6_85etp"]
-[ext_resource type="Texture2D" uid="uid://dm5vpkyxpogfh" path="res://Assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="6_qxav0"]
-[ext_resource type="Texture2D" uid="uid://d2ius34bsrafp" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="7_87v3f"]
-[ext_resource type="Texture2D" uid="uid://mxjdd38old50" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="8_6dwv8"]
-[ext_resource type="Shader" uid="uid://b83y8onc3l6ww" path="res://levels/shaders/moviment_clouds.gdshader" id="9_q6ugd"]
-[ext_resource type="PackedScene" uid="uid://cxf2lstcbda76" path="res://prefabs/water.tscn" id="9_y5ite"]
-[ext_resource type="Texture2D" uid="uid://bgwg6mab7f3xl" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="10_2f64h"]
-[ext_resource type="Texture2D" uid="uid://52b54fahhwsv" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="11_qxav0"]
-[ext_resource type="PackedScene" uid="uid://cn083k55wvnoa" path="res://Actors/enemy.tscn" id="13_epl0q"]
-[ext_resource type="Texture2D" uid="uid://biuq3sq5snyj7" path="res://Assets/Extras/ui_buttons_arrow_left_NORMAL.png" id="14_pt1hf"]
-[ext_resource type="Texture2D" uid="uid://kmqxh2nqwofk" path="res://Assets/Extras/ui_buttons_arrow_left_PRESSED.png" id="15_iek0w"]
-[ext_resource type="Texture2D" uid="uid://ddax1jtq6uuoc" path="res://Assets/Extras/ui_buttons_arrow_right_NORMAL.png" id="16_qe4fd"]
-[ext_resource type="Texture2D" uid="uid://6q4eexxdat8s" path="res://Assets/Extras/ui_buttons_arrow_right_PRESSED.png" id="17_n1cxq"]
-[ext_resource type="Texture2D" uid="uid://bpgqphn2cyw1y" path="res://Assets/Extras/ui_buttons_arrow_up_NORMAL.png" id="18_tfcbk"]
-[ext_resource type="Texture2D" uid="uid://cycr7k3etfyw4" path="res://Assets/Extras/ui_buttons_arrow_up_PRESSED.png" id="19_pk3wa"]
-[ext_resource type="Script" uid="uid://bw61a6np0kd5y" path="res://scripts/warnning_sing.gd" id="20_oyd7s"]
-[ext_resource type="Texture2D" uid="uid://n3vrw5uyc3xh" path="res://Assets/Mini FX, Items & UI/Mini UI/Speech_Emotes (16 x 16).png" id="21_ymwab"]
-[ext_resource type="AudioStream" uid="uid://taqqnidco6lm" path="res://Assets/Sounds/menssage.mp3" id="22_qyqtd"]
-[ext_resource type="AudioStream" uid="uid://dkapcakfref6m" path="res://Assets/Sounds/fASE2.mp3" id="24_2f64h"]
-[ext_resource type="PackedScene" uid="uid://batvn1tvigt64" path="res://levels/transition.tscn" id="24_lwijx"]
-[ext_resource type="PackedScene" uid="uid://cco1puccomcqt" path="res://prefabs/goal.tscn" id="26_7qssf"]
+[ext_resource type="Script" uid="uid://dq24lwgxe1np5" path="res://scripts/world_01.gd" id="1_08wrd"]
+[ext_resource type="Texture2D" uid="uid://ckacmlp0l0403" path="res://Assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_r7u25"]
+[ext_resource type="Texture2D" uid="uid://bnrf6j8d0or65" path="res://Assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="3_8qyyn"]
+[ext_resource type="Texture2D" uid="uid://f8absvmqv73r" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="4_tauk3"]
+[ext_resource type="Texture2D" uid="uid://ogoxjin2dg8n" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Autumn_entities (16 x 16).png" id="5_dyo00"]
+[ext_resource type="Texture2D" uid="uid://dm5vpkyxpogfh" path="res://Assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="6_vewje"]
+[ext_resource type="PackedScene" uid="uid://c81cb8fd5ul5l" path="res://prefabs/coin.tscn" id="7_fdk5e"]
+[ext_resource type="PackedScene" uid="uid://dook8462432xr" path="res://prefabs/moving_plataform.tscn" id="8_v3uvt"]
+[ext_resource type="PackedScene" uid="uid://cxf2lstcbda76" path="res://prefabs/water.tscn" id="9_djy76"]
+[ext_resource type="PackedScene" uid="uid://psmwkmwlvbtr" path="res://Actors/player.tscn" id="10_356tu"]
+[ext_resource type="Texture2D" uid="uid://d2ius34bsrafp" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="11_06p38"]
+[ext_resource type="Texture2D" uid="uid://mxjdd38old50" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="12_x5xw5"]
+[ext_resource type="Shader" uid="uid://b83y8onc3l6ww" path="res://levels/shaders/moviment_clouds.gdshader" id="13_cvsy2"]
+[ext_resource type="Texture2D" uid="uid://bgwg6mab7f3xl" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="14_2hvxp"]
+[ext_resource type="Texture2D" uid="uid://52b54fahhwsv" path="res://Assets/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="15_4elkt"]
+[ext_resource type="PackedScene" uid="uid://cn083k55wvnoa" path="res://Actors/enemy.tscn" id="16_q8t3g"]
+[ext_resource type="Texture2D" uid="uid://biuq3sq5snyj7" path="res://Assets/Extras/ui_buttons_arrow_left_NORMAL.png" id="17_fexhl"]
+[ext_resource type="Texture2D" uid="uid://kmqxh2nqwofk" path="res://Assets/Extras/ui_buttons_arrow_left_PRESSED.png" id="18_dm8ns"]
+[ext_resource type="Texture2D" uid="uid://ddax1jtq6uuoc" path="res://Assets/Extras/ui_buttons_arrow_right_NORMAL.png" id="19_sysdx"]
+[ext_resource type="Texture2D" uid="uid://6q4eexxdat8s" path="res://Assets/Extras/ui_buttons_arrow_right_PRESSED.png" id="20_yiq7q"]
+[ext_resource type="Texture2D" uid="uid://bpgqphn2cyw1y" path="res://Assets/Extras/ui_buttons_arrow_up_NORMAL.png" id="21_os2nr"]
+[ext_resource type="Texture2D" uid="uid://cycr7k3etfyw4" path="res://Assets/Extras/ui_buttons_arrow_up_PRESSED.png" id="22_s8lg6"]
+[ext_resource type="Script" uid="uid://bw61a6np0kd5y" path="res://scripts/warnning_sing.gd" id="23_jndfc"]
+[ext_resource type="Texture2D" uid="uid://n3vrw5uyc3xh" path="res://Assets/Mini FX, Items & UI/Mini UI/Speech_Emotes (16 x 16).png" id="24_qurrm"]
+[ext_resource type="AudioStream" uid="uid://taqqnidco6lm" path="res://Assets/Sounds/menssage.mp3" id="25_d4mli"]
+[ext_resource type="PackedScene" uid="uid://cco1puccomcqt" path="res://prefabs/goal.tscn" id="26_15nfp"]
+[ext_resource type="AudioStream" uid="uid://dkapcakfref6m" path="res://Assets/Sounds/fASE2.mp3" id="27_mu7cn"]
+[ext_resource type="PackedScene" uid="uid://batvn1tvigt64" path="res://levels/transition.tscn" id="28_jbccf"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_naeyk"]
 tile_data = PackedInt32Array(0, 589825, 1)
@@ -42,7 +42,7 @@ tile_data = PackedInt32Array(0, 65537, 1)
 tile_data = PackedInt32Array(0, 589824, 3, 1, 655360, 3, 2, 655360, 3, 3, 655360, 3, 4, 655360, 3, 5, 655360, 3, 6, 655360, 3, 7, 851968, 3)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dl4q8"]
-texture = ExtResource("2_2f64h")
+texture = ExtResource("2_r7u25")
 4:1/0 = 0
 4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:1/0 = 0
@@ -102,7 +102,7 @@ texture = ExtResource("2_2f64h")
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8drao"]
-texture = ExtResource("3_qxav0")
+texture = ExtResource("3_8qyyn")
 15:2/size_in_atlas = Vector2i(3, 1)
 15:2/0 = 0
 1:5/0 = 0
@@ -121,7 +121,7 @@ texture = ExtResource("3_qxav0")
 14:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y5ite"]
-texture = ExtResource("4_2f64h")
+texture = ExtResource("4_tauk3")
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:1/0 = 0
@@ -188,7 +188,7 @@ texture = ExtResource("4_2f64h")
 4:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7qssf"]
-texture = ExtResource("5_qxav0")
+texture = ExtResource("5_dyo00")
 15:1/0 = 0
 16:1/0 = 0
 17:1/0 = 0
@@ -212,7 +212,7 @@ texture = ExtResource("5_qxav0")
 9:1/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_85etp"]
-texture = ExtResource("6_qxav0")
+texture = ExtResource("6_vewje")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -232,14 +232,14 @@ pattern_2 = SubResource("TileMapPattern_j8rs1")
 pattern_3 = SubResource("TileMapPattern_fwd2m")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tii1u"]
-shader = ExtResource("9_q6ugd")
+shader = ExtResource("13_cvsy2")
 shader_parameter/move_speed = 0.05
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ievm4"]
 size = Vector2(41, 20)
 
 [node name="World-02" type="Node2D"]
-script = ExtResource("1_6dwv8")
+script = ExtResource("1_08wrd")
 transition_type = 1
 duration = 2.0
 
@@ -253,132 +253,132 @@ layer_1/tile_data = PackedInt32Array(1966102, 65537, 5, 1966098, 196609, 5, 2228
 
 [node name="coins" type="Node2D" parent="."]
 
-[node name="coin" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(216, 385)
 
-[node name="coin2" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin2" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(720, 360)
 
-[node name="coin3" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin3" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(295, 487)
 
-[node name="coin5" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin5" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(784, 504)
 
-[node name="coin6" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin6" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(840, 504)
 
-[node name="coin7" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin7" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(952, 504)
 
-[node name="coin8" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin8" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(896, 504)
 
-[node name="coin9" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin9" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(984, 393)
 
-[node name="coin10" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin10" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1352, 377)
 
-[node name="coin11" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin11" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1008, 504)
 
-[node name="coin20" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin20" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1658, 512)
 
-[node name="coin21" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin21" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1473, 512)
 
-[node name="coin22" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin22" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(754, 479)
 
-[node name="coin23" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin23" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(2125, 393)
 
-[node name="coin24" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin24" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(2007, 385)
 
-[node name="coin25" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin25" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1946, 257)
 
-[node name="coin26" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin26" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(2115, 257)
 
-[node name="coin27" parent="coins" instance=ExtResource("4_y5ite")]
+[node name="coin27" parent="coins" instance=ExtResource("7_fdk5e")]
 position = Vector2(1569, 409)
 
 [node name="plataform" type="Node2D" parent="."]
 
-[node name="moving_plataform2" parent="plataform" instance=ExtResource("5_7qssf")]
+[node name="moving_plataform2" parent="plataform" instance=ExtResource("8_v3uvt")]
 position = Vector2(797, 401)
 
-[node name="moving_plataform5" parent="plataform" instance=ExtResource("5_7qssf")]
+[node name="moving_plataform5" parent="plataform" instance=ExtResource("8_v3uvt")]
 position = Vector2(1420, 356)
 move_speed = 6.0
 distance = 100
 
-[node name="moving_plataform7" parent="plataform" instance=ExtResource("5_7qssf")]
+[node name="moving_plataform7" parent="plataform" instance=ExtResource("8_v3uvt")]
 position = Vector2(1055, 520)
 move_speed = 6.0
 distance = 100
 
 [node name="Water" type="Node2D" parent="."]
 
-[node name="water" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(776, 576)
 
-[node name="water2" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water2" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(792, 576)
 
-[node name="water3" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water3" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(808, 576)
 
-[node name="water4" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water4" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(824, 576)
 
-[node name="water5" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water5" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(840, 576)
 
-[node name="water6" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water6" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(856, 576)
 
-[node name="water7" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water7" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(872, 576)
 
-[node name="water8" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water8" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(888, 576)
 
-[node name="water9" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water9" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(904, 576)
 
-[node name="water10" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water10" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(918, 576)
 
-[node name="water11" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water11" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(934, 576)
 
-[node name="water12" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water12" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(950, 576)
 
-[node name="water13" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water13" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(966, 576)
 
-[node name="water14" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water14" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(982, 576)
 
-[node name="water15" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water15" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(998, 576)
 
-[node name="water16" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water16" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(1014, 576)
 
-[node name="water17" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water17" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(1560, 448)
 
-[node name="water18" parent="Water" instance=ExtResource("9_y5ite")]
+[node name="water18" parent="Water" instance=ExtResource("9_djy76")]
 position = Vector2(1576, 448)
 
-[node name="player" parent="." instance=ExtResource("6_85etp")]
+[node name="player" parent="." instance=ExtResource("10_356tu")]
 position = Vector2(14, 41)
 
 [node name="Background" type="ParallaxBackground" parent="."]
@@ -390,7 +390,7 @@ motion_mirroring = Vector2(864, 0)
 [node name="texture" type="Sprite2D" parent="Background/05"]
 position = Vector2(0, -161)
 scale = Vector2(3, 3.77404)
-texture = ExtResource("7_87v3f")
+texture = ExtResource("11_06p38")
 centered = false
 
 [node name="04" type="ParallaxLayer" parent="Background"]
@@ -401,7 +401,7 @@ motion_mirroring = Vector2(864, 0)
 [node name="back-cloud" type="Sprite2D" parent="Background/04"]
 position = Vector2(14, 9)
 scale = Vector2(3, 3)
-texture = ExtResource("8_6dwv8")
+texture = ExtResource("12_x5xw5")
 centered = false
 
 [node name="03" type="ParallaxLayer" parent="Background"]
@@ -413,7 +413,7 @@ motion_mirroring = Vector2(864, 0)
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tii1u")
 scale = Vector2(3, 3)
-texture = ExtResource("10_2f64h")
+texture = ExtResource("14_2hvxp")
 centered = false
 
 [node name="02" type="ParallaxLayer" parent="Background"]
@@ -423,7 +423,7 @@ motion_mirroring = Vector2(864, 0)
 
 [node name="texture" type="Sprite2D" parent="Background/02"]
 scale = Vector2(3, 3)
-texture = ExtResource("11_qxav0")
+texture = ExtResource("15_4elkt")
 centered = false
 
 [node name="01" type="ParallaxLayer" parent="Background"]
@@ -433,43 +433,43 @@ motion_mirroring = Vector2(864, 0)
 
 [node name="texture" type="Sprite2D" parent="Background/01"]
 scale = Vector2(3, 3)
-texture = ExtResource("11_qxav0")
+texture = ExtResource("15_4elkt")
 centered = false
 
 [node name="enemies" type="Node2D" parent="."]
 position = Vector2(513, 393)
 
-[node name="enemy" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(74, 0)
 
-[node name="enemy2" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy2" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(-151, 96)
 
-[node name="enemy3" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy3" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(207, 176)
 
-[node name="enemy5" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy5" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(1002, 47)
 
-[node name="enemy6" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy6" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(661, 175)
 
-[node name="enemy7" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy7" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(1131, 47)
 
-[node name="enemy8" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy8" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(861, 175)
 
-[node name="enemy9" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy9" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(994, 176)
 
-[node name="enemy10" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy10" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(1248, 176)
 
-[node name="enemy11" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy11" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(1394, 176)
 
-[node name="enemy12" parent="enemies" instance=ExtResource("13_epl0q")]
+[node name="enemy12" parent="enemies" instance=ExtResource("16_q8t3g")]
 position = Vector2(1612, 16)
 
 [node name="camera" type="Camera2D" parent="."]
@@ -487,35 +487,35 @@ editor_draw_drag_margin = true
 [node name="iu_left" type="TouchScreenButton" parent="controls"]
 position = Vector2(90, 576)
 scale = Vector2(1.78125, 1.90625)
-texture_normal = ExtResource("14_pt1hf")
-texture_pressed = ExtResource("15_iek0w")
+texture_normal = ExtResource("17_fexhl")
+texture_pressed = ExtResource("18_dm8ns")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="iu_rigtht" type="TouchScreenButton" parent="controls"]
 position = Vector2(185, 577)
 scale = Vector2(1.78125, 1.90625)
-texture_normal = ExtResource("16_qe4fd")
-texture_pressed = ExtResource("17_n1cxq")
+texture_normal = ExtResource("19_sysdx")
+texture_pressed = ExtResource("20_yiq7q")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="iu_jump" type="TouchScreenButton" parent="controls"]
 position = Vector2(1039, 577)
 scale = Vector2(1.78125, 1.90625)
-texture_normal = ExtResource("18_tfcbk")
-texture_pressed = ExtResource("19_pk3wa")
+texture_normal = ExtResource("21_os2nr")
+texture_pressed = ExtResource("22_s8lg6")
 action = "ui_accept"
 visibility_mode = 1
 
 [node name="warnning_sing" type="Node2D" parent="."]
 position = Vector2(295, 487)
-script = ExtResource("20_oyd7s")
+script = ExtResource("23_jndfc")
 
 [node name="texture" type="Sprite2D" parent="warnning_sing"]
 visible = false
 position = Vector2(0, -19)
-texture = ExtResource("21_ymwab")
+texture = ExtResource("24_qurrm")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
@@ -527,16 +527,16 @@ shape = SubResource("RectangleShape2D_ievm4")
 debug_color = Color(0.973469, 0, 0.433762, 0.42)
 
 [node name="menssage_sound" type="AudioStreamPlayer" parent="warnning_sing"]
-stream = ExtResource("22_qyqtd")
+stream = ExtResource("25_d4mli")
 
-[node name="goal" parent="." instance=ExtResource("26_7qssf")]
+[node name="goal" parent="." instance=ExtResource("26_15nfp")]
 position = Vector2(2013, 201)
 next_level = "res://levels/world_03.tscn"
 
 [node name="bg_music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24_2f64h")
+stream = ExtResource("27_mu7cn")
 volume_db = -10.0
 autoplay = true
 parameters/looping = true
 
-[node name="Transition" parent="." instance=ExtResource("24_lwijx")]
+[node name="Transition" parent="." instance=ExtResource("28_jbccf")]

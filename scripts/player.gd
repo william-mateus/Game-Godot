@@ -15,6 +15,8 @@ var is_hurted := false
 @onready var remote_transform := $remote as RemoteTransform2D
 @onready var hurt_sound: AudioStreamPlayer = $hurt_sound
 
+func _ready():
+	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -63,6 +65,7 @@ func _on_hurt_box_body_entered(body: Node2D) -> void:
 			take_damage(Vector2(-200,- 200))
 		elif $ray_left.is_colliding():
 			take_damage(Vector2(200,- 200))
+
 func follow_camera(camera):
 	var camera_path = camera.get_path()
 	remote_transform.remote_path = camera_path
@@ -80,7 +83,13 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 	is_hurted = true
 	await get_tree().create_timer(.3).timeout
 	is_hurted = false
-	
+
+#tentado fazer a agua funcionar
+func morrer() -> void:
+	print("Player morreu na água!")
+	get_tree().reload_current_scene()
+
+
 func set_state():
 	var state = "idle"
 	

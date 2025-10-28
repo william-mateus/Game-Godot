@@ -35,8 +35,10 @@ script = ExtResource("1_4balm")
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_45g8t")
 animation = &"Water"
-frame_progress = 0.70562
+autoplay = "Water"
+frame_progress = 0.753664
 
 [node name="collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_8xkbt")
+debug_color = Color(0.943411, 1.04925e-05, 0.601748, 0.42)
